@@ -1,12 +1,13 @@
-package com.api.grocerryapp;
+package com.grocerry.dataapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GrocerryApiApplication {
+public class DataAppApplication {
 
 	public static void main (String[] args) {
-		SpringApplication.run(GrocerryApiApplication.class, args);
+		SpringApplication.run(DataAppApplication.class, args);
 	}
+
 }

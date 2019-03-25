@@ -1,4 +1,4 @@
-package com.api.grocerryapp.models;
+package com.grocerry.dataapp.models;
 
 public class ShoppingList {
 

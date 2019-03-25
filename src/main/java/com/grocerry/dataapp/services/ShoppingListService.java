@@ -1,6 +1,6 @@
-package com.api.grocerryapp.services;
+package com.grocerry.dataapp.services;
 
-import com.api.grocerryapp.models.ShoppingList;
+import com.grocerry.dataapp.models.ShoppingList;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

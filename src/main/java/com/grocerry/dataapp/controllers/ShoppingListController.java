@@ -1,7 +1,7 @@
-package com.api.grocerryapp.controllers;
+package com.grocerry.dataapp.controllers;
 
-import com.api.grocerryapp.models.ShoppingList;
-import com.api.grocerryapp.services.ShoppingListService;
+import com.grocerry.dataapp.models.ShoppingList;
+import com.grocerry.dataapp.services.ShoppingListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
