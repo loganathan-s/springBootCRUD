@@ -9,7 +9,7 @@ public class ShoppingList {
 	private String title;
 
 	@Id
-	private int shoppingListId;
+	public int shoppingListId;
 
 	public ShoppingList () {
 	}

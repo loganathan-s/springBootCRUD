@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -25,7 +26,7 @@ public class ShoppingListController {
 	}
 
 	@RequestMapping("/shoppinglist/{id}")
-	public ShoppingList getShoppingList(@PathVariable int id) {
+	public Optional<ShoppingList> getShoppingList(@PathVariable int id) {
 		return this.shoppingService.getAllShoppingListById(id);
 	}
 
@@ -37,5 +38,10 @@ public class ShoppingListController {
 	@RequestMapping(method=RequestMethod.DELETE, value="/shoppinglist/{id}")
 	public void addShoppingList (@PathVariable int id) {
 		this.shoppingService.deleteShoppingList(id);
+	}
+
+	@RequestMapping(method=RequestMethod.PUT, value="/shoppinglist")
+	public void updateShoppingList (@RequestBody ShoppingList shoppingList) {
+		this.shoppingService.updateShoppingList(shoppingList);
 	}
 }
