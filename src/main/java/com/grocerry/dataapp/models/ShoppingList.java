@@ -1,8 +1,14 @@
 package com.grocerry.dataapp.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class ShoppingList {
 
 	private String title;
+
+	@Id
 	private int shoppingListId;
 
 	public ShoppingList () {
